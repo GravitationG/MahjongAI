@@ -1,0 +1,3 @@
+In this folder, we implemented the Monte Carlo Tree Search method for the agent to play the Mahjong game. 
+Our environment is based on the project of https://github.com/clarkwkw/mahjong-ai. We used its Game.py , Player.py, HKRules.py, Tile.py to build the pipeline of this complicated game. The MonteCarloTree_move.py is the implementation of interface MoveGenerator in MoveGenerator.py. 
+You can download and run the test.ipynb to check out the game test with RandomGenerator and our implementation MCTS_Generator. 

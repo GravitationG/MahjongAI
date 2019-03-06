@@ -1,0 +1,94 @@
+{
+	"mongo_uri": "mongodb://{username}:{password}@{hostname}",
+	"tg_bot_token": "",
+	"tg_server_address": "",
+	"tg_server_port": 443,
+	"ai_models":[
+		{
+			"model_id": "Heuristics1",
+			"generator_id": "RuleBasedAINaive",
+			"weight": 0.2,
+			"kwargs":{
+				 "display_step": false,
+				 "s_chow": 2,
+				 "s_pong": 6,
+				 "s_future": 1,
+				 "s_explore": 0,
+				 "s_neighbor_suit": 0,
+				 "s_mixed_suit": 0
+			},
+			"names": ["Dog"]
+		},
+		{
+			"model_id": "Heuristics2",
+			"generator_id": "RuleBasedAINaive",
+			"weight": 0.2,
+			"kwargs":{
+				 "display_step": false,
+				 "s_chow": 2,
+				 "s_pong": 6,
+				 "s_future": 1,
+				 "s_explore": 0.35,
+				 "s_neighbor_suit": 0,
+				 "s_mixed_suit": 0
+			},
+			"names": ["Marst"]
+		},
+		{
+			"model_id": "Heuristics3",
+			"generator_id": "RuleBasedAINaive",
+			"weight": 0.2,
+			"kwargs":{
+				 "display_step": false,
+				 "s_chow": 2,
+				 "s_pong": 6,
+				 "s_future": 1,
+				 "s_explore": 0.7,
+				 "s_neighbor_suit": 0,
+				 "s_mixed_suit": 0
+			},
+			"names": ["Coli"]
+		},
+		{
+			"model_id": "H_dq",
+			"generator_id": "DeepQ",
+			"weight": 0.2,
+			"kwargs":{
+				 "display_step": false,
+				 "q_network_path": "resources/models/h_deepq",
+				 "is_train": false
+			},
+			"names": ["Deeb"]
+		},
+		{
+			"model_id": "H_pgf",
+			"generator_id": "PGF",
+			"weight": 0.2,
+			"kwargs":{
+				 "display_step": false,
+				 "pg_model_path": "resources/models/h_pg_fitted",
+				 "is_train": false
+			},
+			"names": ["Paul"]
+		}
+	],
+	"s3_zip_conf": {
+		"load_from_s3": true,
+		"bucket_name": "",
+		"zip_name": ""
+	},
+	"tgmsg_timeout": 10,
+	"scoring_scheme":[
+		[0, 0],
+		[40, 60],
+		[80, 120],
+		[160, 240],
+		[320, 480],
+		[480, 720],
+		[640, 960],
+		[960, 1440],
+		[1280, 1920],
+		[1920, 2880],
+		[2560, 3840]
+	]
+}
