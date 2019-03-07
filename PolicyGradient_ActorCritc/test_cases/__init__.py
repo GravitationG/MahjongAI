@@ -1,0 +1,22 @@
+test_cases = [
+	"ai_battle", 
+	"fcnetwork", 
+	"calculate_score", 
+	"handpredictor",
+	"handpredictor_stream",
+	"handpredictor_test",
+	"heuristic_train",
+	"mjdeepq",
+	"mjedeepq", 
+	"mjpg",
+	"mjpgf",
+	"rule_base_mcts",
+	"rule_base_naive", 
+	"rule_base_q",
+	"simpledeepq",
+	"simplepg",
+	"simpleq",
+	"start_game", 
+	"start_tggame", 
+	"validate_hand"
+]
