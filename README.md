@@ -7,6 +7,7 @@ The MonteCarloTree_move.py is the implementation of interface MoveGenerator in M
 You can download and run the test.ipynb to check out the game test with RandomGenerator and our implementation MCTS_Generator. 
 
 ## Deep Q Learning method
+In the folder of DeepQLearning, we inplemented the Deep Q-Learing algorithme. To train the model, please run the scricpt Training.py. Network.py is the deep network we utilize; Generator.py is the implementation of MoveGenerator. 
 Dependency:
 Tensorflow
 
