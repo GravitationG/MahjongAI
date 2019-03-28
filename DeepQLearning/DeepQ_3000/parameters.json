@@ -1,0 +1,7 @@
+{
+    "_epsilon": 0.9,
+    "_memory_size": 500,
+    "_replace_target_iter": 300,
+    "_batch_size": 100,
+    "_learn_step": 3000
+}
